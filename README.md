@@ -1,7 +1,7 @@
 ---
 title: "Préparation DVF"
-author: "Boris Mericskay"
-date: "02/07/2021"
+author: "Boris Mericskay et Florent Demoraes"
+date: "27/07/2021"
 output: html_document
 ---
 
@@ -17,14 +17,14 @@ Seul le package `tidyverse` dédié à la manipulation de données est nécessai
 ```{r cars}
 library(tidyverse)
 ```
-Définition de l'environnement de travail
+### Définition de l'environnement de travail
 
 ```{r setup}
 
 knitr::opts_knit$set(root.dir = 'D:/DVF/BZH')
 ```
 ---
-## IMPORT DATASET
+### Import du jeu de données brut
 ---
 
 ```{r cars}
@@ -95,7 +95,7 @@ hist(etape5$prix, breaks = 200, xlim = c(15000,10000000))
 ```{r cars}
 Maisons <- etape5 %>% filter(type == 'Maison')
 Appartement <- etape5 %>% filter (type == 'Appartement')    
-  ```
+```
  
 #### Fixer un seuil maximal des surfaces (histogramme)
 ```{r cars}
@@ -229,7 +229,7 @@ mean(Mutationscomplexes$nb)
 
 ---
 
-# 2- Indicateur génériques et visualisation de données
+# 2- INDICATEURS GENERIQUES ET VISUALISATIONS DE DONNEES
 
 ---
 
@@ -271,7 +271,7 @@ ggplot(recapinsee, aes(x=Typo_INSEE, y=nb, fill=type)) +
   theme_bw()
 ```
 
-###Histogramme des prix au m2 par Departement
+### Histogramme des prix au m2 par département
 
 ```{r cars}
 RecapPrixDep <- DVFOK %>% group_by(Dep, type) %>% mutate(moydeptype = mean(prixm2))
