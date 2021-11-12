@@ -23,7 +23,7 @@ knitr::opts_knit$set(root.dir = 'C:/DVF')
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 
 ```
-### Chargement des package néceassaires
+### Chargement des packages R nécessaires
 
 Seul le package `tidyverse` dédié à la manipulation de données est nécessaire ici.
 
