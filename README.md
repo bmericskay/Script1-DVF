@@ -23,7 +23,6 @@ On définit ici le dossier qui centralise les données et où les différents je
 ```{r setup, include=FALSE} 
 knitr::opts_knit$set(root.dir = 'C:/DVF')
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
-
 ```
 
 ### Chargement des packages R nécessaires
