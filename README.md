@@ -14,6 +14,8 @@ PRÉPARATION DES DONNÉES DVF OPENDATA
 ---
 Ce script a comme objectif de préparer les données DVF en opendata préalablement à les analyses (nettoyage, filtrage, agrégation,...).
 
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
 ## Préparation du projet
 
 ### Définition de l'environnement de travail
